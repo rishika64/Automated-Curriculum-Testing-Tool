@@ -19,8 +19,10 @@ This project implements a hybrid Selenium + BeautifulSoup-based system to scrape
 ### 2. **Navigate Through A–Z Index or Sitemap**
 - After loading the page, we use **BeautifulSoup** to search for elements that contain links to course sections.
 - These elements are identified using a set of heuristic tag+class definitions (`keywordz`), such as:
-  - `<ul class="letternav clearfix">`
-  - `<select name="letternav">`
+  ```html
+   `<ul class="letternav clearfix">`
+   `<select name="letternav">`
+  ```
 
 ### 3. **Scrape Each Subject or Course Item**
 - The scraper visits each A–Z or sitemap link found in step 2.
