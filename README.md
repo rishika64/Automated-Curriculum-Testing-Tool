@@ -37,7 +37,7 @@ This project implements a hybrid Selenium + BeautifulSoup-based system to scrape
   ```
 
 ### 4. **Filter/Validate Course Links**
-- Only anchor (<a>) tags whose href contains patterns like "course" (as defined in coursehref) are considered valid course links.
+- Only anchor (`<a>`) tags whose href contains patterns like "course" (as defined in coursehref) are considered valid course links.
 - This helps exclude irrelevant links such as internal navigation or unrelated documents.
 
 ### 5. **Store in Structured Python Objects**
